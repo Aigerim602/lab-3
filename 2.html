@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="kz">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+  var arr = [A=0,B=-9],
+      fMin;
+  function getMin(arr) {
+    var arrLen = arr.length,
+        minSan = arr[0];
+    for (var i = 0; i < arrLen; i++) {
+      if (minSan > arr[i]) {
+        minSan = arr[i];
+      }
+    }
+    return minSan;
+  }
+  fMin = getMin(arr);
+  console.log(fMin); 
+  document.write(" минимум элемент =" + fMin);
+  alert("минимум элемент =" + fMin);
+  </script>
+</body>
+</html>
